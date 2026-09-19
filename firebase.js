@@ -1,4 +1,3 @@
-// Konfiguracja Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyAE0z2_4ylnhao9x9FZAXGQVqqCZPXUBNo",
   authDomain: "kuku-informacje.firebaseapp.com",
@@ -9,7 +8,6 @@ const firebaseConfig = {
   measurementId: "G-HBY0JML1QL"
 };
 
-// Inicjalizacja
 firebase.initializeApp(firebaseConfig);
 
 const storage = firebase.storage();
