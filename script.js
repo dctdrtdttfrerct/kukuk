@@ -1,4 +1,18 @@
 const itemsDiv = document.getElementById("items");
+const loginBox = document.getElementById("loginBox");
+const panel = document.getElementById("panel");
+
+function login() {
+    const pass = document.getElementById("passwordInput").value;
+
+    if (pass === "3466123456") {
+        loginBox.style.display = "none";
+        panel.style.display = "block";
+        loadItems();
+    } else {
+        alert("Złe hasło!");
+    }
+}
 
 async function loadItems() {
     itemsDiv.innerHTML = "";
@@ -65,5 +79,3 @@ async function savePost(image, text) {
 
     loadItems();
 }
-
-loadItems();
